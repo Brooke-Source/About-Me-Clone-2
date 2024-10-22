@@ -1,0 +1,63 @@
+body { background-color: gray;}
+h1 { color: pink;
+ }
+h2 { color: pink; }
+#myImage {width: 250px;
+height: 300px;
+margin: 3px;
+border: 5px solid pink; 
+    border-radius: 8px; 
+    padding: 5px;
+    background-color:white;
+}
+.hover-text {
+    display: none;
+    position: absolute;
+    background-color: red;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 1000;
+}
+.animation-container {
+    position: relative; 
+    display: inline-block; 
+    width: 60px; 
+    height: 60px; 
+}
+
+.animated-group {
+    position: relative; 
+    animation: move 2s infinite; 
+}
+
+#strawberry,
+#mouse {
+    position: absolute; 
+}
+
+#strawberry {
+    top: 1; 
+    left: 1; 
+    width: 50px;
+    height: 50px;
+}
+
+#mouse {
+    top: 11px; 
+    left: 11px; 
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.list-inline-item {
+    color: pink; 
+}
+
+.list-inline-item:hover {
+    color: red; 
+}
